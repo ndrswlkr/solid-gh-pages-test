@@ -111,7 +111,7 @@ function Recognize () {
 
   return (
     <div>
-      <h2>Recognize</h2>
+      <h2>Recognize text</h2>
       <p>{ret()}</p>
       <p>{confidence()}</p>
       <div class='camera'>
