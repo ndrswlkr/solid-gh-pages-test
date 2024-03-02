@@ -71,7 +71,7 @@ function drawVideoPreview () {
 
 const getVideo = () => {
   navigator.mediaDevices
-    .getUserMedia({ video: { facingMode: 'enviroment' }, audio: false })
+    .getUserMedia({ video: { facingMode: 'environment' }, audio: false })
     .then(stream => {
       video.srcObject = stream
       video.play()
