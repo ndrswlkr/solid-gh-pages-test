@@ -135,7 +135,7 @@ function drawVideoPreview () {
 const getVideo = () => {
   console.log("GET VIDEO",  selectedDevice())
   navigator.mediaDevices
-    .getUserMedia({ video: { id: selectedDevice() }, audio: false })
+    .getUserMedia({ video: { deviceId: selectedDevice() }, audio: false })
     .then(stream => {
       video.srcObject = stream
       video.play()
